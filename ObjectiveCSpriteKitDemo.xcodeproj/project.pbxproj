@@ -17,6 +17,9 @@
 		88A7F6A11C595C2900AC9B63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88A7F69F1C595C2900AC9B63 /* LaunchScreen.storyboard */; };
 		88A7F6AC1C595C2900AC9B63 /* ObjectiveCSpriteKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A7F6AB1C595C2900AC9B63 /* ObjectiveCSpriteKitDemoTests.m */; };
 		88A7F6B71C595C2900AC9B63 /* ObjectiveCSpriteKitDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A7F6B61C595C2900AC9B63 /* ObjectiveCSpriteKitDemoUITests.m */; };
+		88A7F6C71C595D3F00AC9B63 /* Tile.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A7F6C61C595D3F00AC9B63 /* Tile.m */; };
+		88A7F6CA1C596E1E00AC9B63 /* BackgroundData.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A7F6C91C596E1E00AC9B63 /* BackgroundData.m */; };
+		88A7F6CD1C597D9100AC9B63 /* BackgroundTiler.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A7F6CC1C597D9100AC9B63 /* BackgroundTiler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,12 @@
 		88A7F6B21C595C2900AC9B63 /* ObjectiveCSpriteKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveCSpriteKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88A7F6B61C595C2900AC9B63 /* ObjectiveCSpriteKitDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCSpriteKitDemoUITests.m; sourceTree = "<group>"; };
 		88A7F6B81C595C2900AC9B63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88A7F6C41C595C8B00AC9B63 /* Tile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
+		88A7F6C61C595D3F00AC9B63 /* Tile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tile.m; sourceTree = "<group>"; };
+		88A7F6C81C596D2200AC9B63 /* BackgroundData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackgroundData.h; sourceTree = "<group>"; };
+		88A7F6C91C596E1E00AC9B63 /* BackgroundData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundData.m; sourceTree = "<group>"; };
+		88A7F6CB1C597D5B00AC9B63 /* BackgroundTiler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackgroundTiler.h; sourceTree = "<group>"; };
+		88A7F6CC1C597D9100AC9B63 /* BackgroundTiler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundTiler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +127,12 @@
 				88A7F69F1C595C2900AC9B63 /* LaunchScreen.storyboard */,
 				88A7F6A21C595C2900AC9B63 /* Info.plist */,
 				88A7F68C1C595C2900AC9B63 /* Supporting Files */,
+				88A7F6C41C595C8B00AC9B63 /* Tile.h */,
+				88A7F6C61C595D3F00AC9B63 /* Tile.m */,
+				88A7F6C81C596D2200AC9B63 /* BackgroundData.h */,
+				88A7F6C91C596E1E00AC9B63 /* BackgroundData.m */,
+				88A7F6CB1C597D5B00AC9B63 /* BackgroundTiler.h */,
+				88A7F6CC1C597D9100AC9B63 /* BackgroundTiler.m */,
 			);
 			path = ObjectiveCSpriteKitDemo;
 			sourceTree = "<group>";
@@ -279,9 +294,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88A7F6C71C595D3F00AC9B63 /* Tile.m in Sources */,
 				88A7F6991C595C2900AC9B63 /* GameViewController.m in Sources */,
 				88A7F6911C595C2900AC9B63 /* AppDelegate.m in Sources */,
+				88A7F6CA1C596E1E00AC9B63 /* BackgroundData.m in Sources */,
 				88A7F6941C595C2900AC9B63 /* GameScene.m in Sources */,
+				88A7F6CD1C597D9100AC9B63 /* BackgroundTiler.m in Sources */,
 				88A7F68E1C595C2900AC9B63 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ObjectiveCSpriteKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clintonmedbery.ObjectiveCSpriteKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -433,6 +452,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ObjectiveCSpriteKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clintonmedbery.ObjectiveCSpriteKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

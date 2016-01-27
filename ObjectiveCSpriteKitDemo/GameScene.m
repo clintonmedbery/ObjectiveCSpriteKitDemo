@@ -7,6 +7,7 @@
 //
 
 #import "GameScene.h"
+#import "BackgroundTiler.h"
 
 @implementation GameScene
 
@@ -14,10 +15,15 @@
     /* Setup your scene here */
     SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
     
-    myLabel.text = @"Hello, World!";
-    myLabel.fontSize = 45;
-    myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
-                                   CGRectGetMidY(self.frame));
+//    myLabel.text = @"Hello, World!";
+//    myLabel.fontSize = 45;
+//    myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
+//                                   CGRectGetMidY(self.frame));
+    BackgroundTiler *backgroundTiler = [[BackgroundTiler alloc] init:@"yard" tileSize:64];
+    for (Tile *tile in backgroundTiler.tiles){
+        tile.zPosition = -1;
+//        [self addChild:tile];
+    }
     
     [self addChild:myLabel];
 }
