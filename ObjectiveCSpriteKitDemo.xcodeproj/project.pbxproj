@@ -21,6 +21,7 @@
 		88A7F6CA1C596E1E00AC9B63 /* BackgroundData.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A7F6C91C596E1E00AC9B63 /* BackgroundData.m */; };
 		88A7F6CD1C597D9100AC9B63 /* BackgroundTiler.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A7F6CC1C597D9100AC9B63 /* BackgroundTiler.m */; };
 		88A7F6D11C5AA79700AC9B63 /* AudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A7F6D01C5AA79700AC9B63 /* AudioManager.m */; };
+		88A7F6D31C5ABF1500AC9B63 /* player.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 88A7F6D21C5ABF1500AC9B63 /* player.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		88A7F6CC1C597D9100AC9B63 /* BackgroundTiler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundTiler.m; sourceTree = "<group>"; };
 		88A7F6CF1C5AA0C500AC9B63 /* AudioManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioManager.h; sourceTree = "<group>"; };
 		88A7F6D01C5AA79700AC9B63 /* AudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioManager.m; sourceTree = "<group>"; };
+		88A7F6D21C5ABF1500AC9B63 /* player.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = player.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		88A7F68B1C595C2900AC9B63 /* ObjectiveCSpriteKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				88A7F6D21C5ABF1500AC9B63 /* player.atlas */,
 				88A7F68F1C595C2900AC9B63 /* AppDelegate.h */,
 				88A7F6901C595C2900AC9B63 /* AppDelegate.m */,
 				88A7F6921C595C2900AC9B63 /* GameScene.h */,
@@ -273,6 +276,7 @@
 			files = (
 				88A7F6961C595C2900AC9B63 /* GameScene.sks in Resources */,
 				88A7F6A11C595C2900AC9B63 /* LaunchScreen.storyboard in Resources */,
+				88A7F6D31C5ABF1500AC9B63 /* player.atlas in Resources */,
 				88A7F69E1C595C2900AC9B63 /* Assets.xcassets in Resources */,
 				88A7F69C1C595C2900AC9B63 /* Main.storyboard in Resources */,
 			);

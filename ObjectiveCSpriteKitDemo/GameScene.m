@@ -8,8 +8,16 @@
 
 #import "GameScene.h"
 #import "BackgroundTiler.h"
+#import "AudioManager.h"
+
 
 @implementation GameScene
+{
+    
+    SKSpriteNode *_player;
+    NSArray *_walkFrames;
+    
+}
 
 -(void)didMoveToView:(SKView *)view {
     /* Setup your scene here */
@@ -28,6 +36,19 @@
         tile.zPosition = -1;
        [self addChild:tile];
     }
+    SKTextureAtlas *playerAtlas = [SKTextureAtlas atlasNamed:@"player"];
+    SKTexture *walkTexture1 = [playerAtlas textureNamed:@"player_1.png"];
+    SKTexture *walkTexture2 = [playerAtlas textureNamed:@"player_2.png"];
+    _walkFrames = @[walkTexture1, walkTexture2];
+    
+    SKTexture *temp = _walkFrames[0];
+    _player = [SKSpriteNode spriteNodeWithTexture:temp];
+    _player.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
+    _player.size = CGSizeMake(128, 128);
+    [self addChild:_player];
+    
+    [self animatePlayer];
+
     
 }
 
@@ -35,6 +56,7 @@
     /* Called when a touch begins */
     
     for (UITouch *touch in touches) {
+        [AudioManager.audioManager playSound];
 //        CGPoint location = [touch locationInNode:self];
 //        
 //
@@ -54,6 +76,12 @@
 
 -(void)update:(CFTimeInterval)currentTime {
     /* Called before each frame is rendered */
+}
+
+-(void)animatePlayer
+{
+    [_player runAction:[SKAction repeatActionForever:[SKAction animateWithTextures:_walkFrames timePerFrame:0.6f resize:NO restore:YES]]];
+    return;
 }
 
 @end

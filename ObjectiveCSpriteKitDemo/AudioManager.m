@@ -22,9 +22,21 @@
 }
 
 -(id)init{
-    
+    self.soundNames = @{ @"select-classic" : @"wav", @"bubble" : @"wav" , @"ninja-whoosh" : @"mp3"};
     
     return self;
+}
+
+-(void)playSound {
+    NSArray *keyArray = [self.soundNames allKeys];
+    int random = arc4random()%[keyArray count];
+    NSString *soundName = [keyArray objectAtIndex:random];
+    NSString *type = (NSString *)[self.soundNames objectForKey:soundName];
+    
+    NSURL *audioFileLocationURL = [[NSBundle mainBundle] URLForResource:soundName withExtension:type];
+    NSError *error;
+    self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:audioFileLocationURL error:&error];
+    [self.audioPlayer play];
 }
 
 @end

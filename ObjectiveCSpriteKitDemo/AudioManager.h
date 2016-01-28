@@ -7,13 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AVFoundation/AVFoundation.h>
+
 
 @interface AudioManager : NSObject
 
-@property (nonatomic, retain) NSArray *soundNames;
+@property (nonatomic, retain) NSDictionary *soundNames;
+@property (nonatomic, retain) AVAudioPlayer *audioPlayer;
 
 +(AudioManager *)audioManager;
+
 -(id)init;
+-(void)playSound;
 
 
 @end
