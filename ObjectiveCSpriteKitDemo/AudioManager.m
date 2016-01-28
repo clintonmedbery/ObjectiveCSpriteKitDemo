@@ -22,7 +22,7 @@
 }
 
 -(id)init{
-    self.soundNames = @{ @"select-classic" : @"wav", @"bubble" : @"wav" , @"ninja-whoosh" : @"mp3"};
+    self.soundNames = @{ @"select-classic" : @"wav", @"bubble" : @"wav" , @"ninja-whoosh" : @"mp3", @"ninja-sword" : @"mp3", @"cake-full":@"aif"};
     
     return self;
 }

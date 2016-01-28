@@ -57,20 +57,12 @@
     
     for (UITouch *touch in touches) {
         [AudioManager.audioManager playSound];
-//        CGPoint location = [touch locationInNode:self];
-//        
-//
-//        SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship"];
-//        
-//        sprite.xScale = 0.5;
-//        sprite.yScale = 0.5;
-//        sprite.position = location;
-//        
-//        SKAction *action = [SKAction rotateByAngle:M_PI duration:1];
-//        
-//        [sprite runAction:[SKAction repeatActionForever:action]];
-//        
-//        [self addChild:sprite];
+        CGPoint location = [touch locationInNode:self];
+        location.y = _player.position.y;
+        CGFloat speed = fabs(_player.position.x - location.x) / 125;
+        SKAction *moveAction = [SKAction moveTo:location duration:speed];
+        [_player runAction:moveAction];
+
     }
 }
 
