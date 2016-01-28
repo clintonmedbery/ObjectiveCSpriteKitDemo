@@ -13,9 +13,9 @@
 
 @interface BackgroundTiler : NSObject
 
--(id)init:(NSString*)name tileSize:(int)tileSize;
+-(id)init:(NSString*)name tileSize:(int)tileSize minX:(CGFloat)minX minY:(CGFloat)minY;
 
 @property (nonatomic, strong) BackgroundData *backgroundData;
-@property (nonatomic, strong) Tile *tiles;
+@property (nonatomic, strong) NSMutableArray *tiles;
 
 @end

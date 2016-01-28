@@ -9,13 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ObjectiveCSpriteKitDemo/BackgroundTiler.m"
-            timestampString = "475628402.670079"
+            filePath = "ObjectiveCSpriteKitDemo/GameScene.m"
+            timestampString = "475696263.338956"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "-init:tileSize:"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "-didMoveToView:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,12 +25,44 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ObjectiveCSpriteKitDemo/GameScene.m"
-            timestampString = "475629525.349005"
+            filePath = "ObjectiveCSpriteKitDemo/BackgroundTiler.m"
+            timestampString = "475704677.540243"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "-init:tileSize:minX:minY:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ObjectiveCSpriteKitDemo/BackgroundTiler.m"
+            timestampString = "475704677.540243"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "-init:tileSize:minX:minY:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ObjectiveCSpriteKitDemo/GameScene.m"
+            timestampString = "475698819.51966"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "-didMoveToView:"
             landmarkType = "5">
          </BreakpointContent>

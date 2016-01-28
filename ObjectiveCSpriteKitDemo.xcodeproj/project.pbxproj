@@ -20,6 +20,7 @@
 		88A7F6C71C595D3F00AC9B63 /* Tile.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A7F6C61C595D3F00AC9B63 /* Tile.m */; };
 		88A7F6CA1C596E1E00AC9B63 /* BackgroundData.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A7F6C91C596E1E00AC9B63 /* BackgroundData.m */; };
 		88A7F6CD1C597D9100AC9B63 /* BackgroundTiler.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A7F6CC1C597D9100AC9B63 /* BackgroundTiler.m */; };
+		88A7F6D11C5AA79700AC9B63 /* AudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A7F6D01C5AA79700AC9B63 /* AudioManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		88A7F6C91C596E1E00AC9B63 /* BackgroundData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundData.m; sourceTree = "<group>"; };
 		88A7F6CB1C597D5B00AC9B63 /* BackgroundTiler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackgroundTiler.h; sourceTree = "<group>"; };
 		88A7F6CC1C597D9100AC9B63 /* BackgroundTiler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundTiler.m; sourceTree = "<group>"; };
+		88A7F6CF1C5AA0C500AC9B63 /* AudioManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioManager.h; sourceTree = "<group>"; };
+		88A7F6D01C5AA79700AC9B63 /* AudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +136,8 @@
 				88A7F6C91C596E1E00AC9B63 /* BackgroundData.m */,
 				88A7F6CB1C597D5B00AC9B63 /* BackgroundTiler.h */,
 				88A7F6CC1C597D9100AC9B63 /* BackgroundTiler.m */,
+				88A7F6CF1C5AA0C500AC9B63 /* AudioManager.h */,
+				88A7F6D01C5AA79700AC9B63 /* AudioManager.m */,
 			);
 			path = ObjectiveCSpriteKitDemo;
 			sourceTree = "<group>";
@@ -300,6 +305,7 @@
 				88A7F6CA1C596E1E00AC9B63 /* BackgroundData.m in Sources */,
 				88A7F6941C595C2900AC9B63 /* GameScene.m in Sources */,
 				88A7F6CD1C597D9100AC9B63 /* BackgroundTiler.m in Sources */,
+				88A7F6D11C5AA79700AC9B63 /* AudioManager.m in Sources */,
 				88A7F68E1C595C2900AC9B63 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -528,6 +534,7 @@
 				88A7F6BD1C595C2900AC9B63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88A7F6BE1C595C2900AC9B63 /* Build configuration list for PBXNativeTarget "ObjectiveCSpriteKitDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +543,7 @@
 				88A7F6C01C595C2900AC9B63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88A7F6C11C595C2900AC9B63 /* Build configuration list for PBXNativeTarget "ObjectiveCSpriteKitDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +552,7 @@
 				88A7F6C31C595C2900AC9B63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
